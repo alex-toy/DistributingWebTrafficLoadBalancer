@@ -12,11 +12,13 @@ $Global:application_path = "web"
 
 az group create --name $RGName --location $RGLocation
 
-."commands\VirtualNetwork\VN_create.ps1"
+."commands\Network\VN_create.ps1"
+
+."commands\LoadBalancer\LB_create.ps1"
 
 ."commands\VirtualNetwork\VN_VMs_connect.ps1"
 
-# ."commands\ApplicationGateway\AG_create.ps1"
+."commands\VirtualMachine\VM_create.ps1"
 
 
 
